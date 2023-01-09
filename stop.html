@@ -1,0 +1,15 @@
+<html>
+<head>
+  </head>
+  <body onload="stopEndpoint()">
+    This contains the payload to stop Micronaut applications containing the <a href="https://docs.micronaut.io/latest/guide/#stopEndpoint">stop endpoint</a>
+    </body>
+
+    <script>
+    function shutdownActuator() {
+      var stop = new XMLHttpRequest();
+      stop.open("POST", "http://localhost:8080/stop");
+      stop.send(null);     
+    }
+    </script>
+</html>
