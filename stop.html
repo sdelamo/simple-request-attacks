@@ -6,7 +6,7 @@
     </body>
 
     <script>
-    function shutdownActuator() {
+    function stopEndpoint() {
       var stop = new XMLHttpRequest();
       stop.open("POST", "http://localhost:8080/stop");
       stop.send(null);     
