@@ -8,8 +8,7 @@
     <script>
     function stopEndpoint() {
       var stop = new XMLHttpRequest();
-      var deathSeed = ()=>Math.floor(Math.random()*253+1);
-      stop.open("POST", "http://127."+deathSeed()+"."+deathSeed()+"."+deathSeed()+":8080/stop");
+      stop.open("POST", "http://127.0.0.1:8080/stop");
       stop.send(null);     
     }
     </script>
